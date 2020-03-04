@@ -12,7 +12,7 @@ slug:  storywriter/tutorial
 ``` css
 <FormInput @input="val=>username=val" name="username" value="username" placeholder="Username" />
 ```
-第一段代码中，父组件传name和value给子组件，子组件得到的name和value的值会是username这个变量的值。
+第一段代码中，参数前带冒号，也就是v-bind的简写，表明参数绑定的是一个变量，父组件传name和value给子组件，子组件得到的name和value的值会是username这个变量的值。
 
 第二段diamante中，name和value前没有冒号，子组件得到的name和value值是单纯的字符串‘username’。
 
